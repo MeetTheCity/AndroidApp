@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.myapplication.MainActivity">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <TextView
+        android:layout_marginTop="3dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text=" יחס המרה "/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/base_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="USD"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" = "/>
+
+        <TextView
+            android:id="@+id/converted_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="444"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
