@@ -11,7 +11,7 @@ import com.example.user.myapplication.data.responses.GetCurrencyCodeResponse;
 import com.example.user.myapplication.data.rest.RetrofitClient;
 import com.example.user.myapplication.data.rest.requests.CurrencyCodeRequest;
 import com.example.user.myapplication.data.rest.requests.CurrencyRequest;
-import com.example.user.myapplication.util.FileProcessingUtils;
+import com.example.user.myapplication.utils.FileProcessingUtils;
 
 import java.util.List;
 
